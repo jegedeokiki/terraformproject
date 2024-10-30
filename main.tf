@@ -93,7 +93,7 @@ module "ec21" {
 
   name = "testmachine1"
 
-  ami                         = data.aws_ami.ubutu.id
+  ami                         = data.aws_ami.ubuntu.id
   instance_type               = "c5.large"
   availability_zone           = local.availability_zone
   subnet_id                   = element(module.vpc1.private_subnets, 0)
